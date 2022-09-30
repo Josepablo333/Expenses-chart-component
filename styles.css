@@ -1,0 +1,218 @@
+@import url(https://fonts.google.com/specimen/DM+Sans);
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 500px;
+}
+
+.card .up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card .up .text {
+    color: hsl(33, 100%, 98%);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.card .up .number {
+    color: hsl(33, 100%, 98%);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.card .up .logo img {
+   margin: 5px;
+}
+
+.card .down {
+    background-color: hsl(33, 100%, 98%);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card .down .chart {
+    border-bottom: solid 2px hsl(27, 66%, 92%);
+}
+
+.card .down .chart .text {
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+.card .down .charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card .down .charts .individual-tables {
+    margin: 10px;
+}
+
+.card .down .charts .each_day {
+    width: 40px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: -48px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.card .down .charts .form {
+    width: 40px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+}
+
+.card .down .charts .one{
+    height: 34px;
+}
+
+.card .down .charts .two{
+    height: 70px;
+}
+
+.card .down .charts .three{
+    height: 104px;
+}
+
+.card .down .charts .four{
+    height: 62px;
+}
+
+.card .down .charts .five{
+    height: 46px;
+}
+
+.card .down .charts .six{
+    height: 86px;
+}
+
+.card .down .charts .seven{
+    height: 50px;
+}
+ 
+.card .down .charts .form:hover {
+    background-color: hsl(186, 34%, 60%);
+    padding: 1px;
+    margin: -1px;
+}  
+
+.card .down .charts p {
+    color: hsl(28, 10%, 53%);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.card .down .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card .down .total .left {
+    margin: 20px;
+}
+
+.card .down .total .left .text {
+    color: hsl(28, 10%, 53%);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.card .down .total .left .number {
+    color: hsl(25, 47%, 15%);
+    font-size: 35px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.card .down .total .right {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card .down .total .right .number {
+    color: hsl(25, 47%, 15%);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card .down .total .right .text {
+    color: hsl(28, 10%, 53%);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.attribution {
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 400px;
+    }
+    .card .down .charts .individual-tables {
+        margin: 8px;
+    }
+    .card .down .charts .form {
+        width: 35px;
+    }
+    .card .down .charts .each_day {
+        width: 35px;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .card {
+        width: 290px;
+        margin: auto;
+    }
+    .card .down .charts .individual-tables {
+        margin: 5px;
+    }
+    .card .down .charts .form {
+        width: 28px;
+    }
+    .card .down .charts .each_day {
+        width: 28px;
+    }
+}

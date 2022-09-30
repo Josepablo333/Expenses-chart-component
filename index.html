@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <div class="up">
+      <div class="balance">
+          <p class="text">My balance</p>
+          <p class="number">$921.48</p>
+      </div>
+      <div class="logo">
+          <img src="images/logo.svg" alt="">
+      </div>
+    </div>
+    <div class="down">
+      <div class="chart">
+        <p class="text">Spending - Last 7 days</p>
+        <div class="charts">
+          <div class="individual-tables">
+            <div class="each_day" id="mon">
+              <p class="per_day" id="monday"></p>
+            </div>
+            <div class="form one" onmouseover="show0()" onmouseout="hide0()"></div>
+            <p>mon</p>
+          </div>
+          <div class="individual-tables">
+            <div class="each_day" id="tue">
+              <p class="per_day" id="tuesday"></p>
+            </div>
+            <div class="form two" onmouseover="show1()" onmouseout="hide1()"></div>
+            <p>tue</p>
+          </div>
+          <div class="individual-tables">
+            <div class="each_day" id="wed">
+              <p class="per_day" id="wednesday"></p>
+            </div>
+            <div class="form three" onmouseover="show2()" onmouseout="hide2()"></div>
+            <p>wed</p>
+          </div>
+          <div class="individual-tables">
+            <div class="each_day" id="thu">
+              <p class="per_day" id="thursday"></p>
+            </div>
+            <div class="form four" onmouseover="show3()" onmouseout="hide3()"></div>
+            <p>thu</p>
+          </div>
+          <div class="individual-tables">
+            <div class="each_day" id="fri">
+              <p class="per_day" id="friday"></p>
+            </div>
+            <div class="form five" onmouseover="show4()" onmouseout="hide4()"></div>
+            <p>fri</p>
+          </div>
+          <div class="individual-tables">
+            <div class="each_day" id="sat">
+              <p class="per_day" id="saturday"></p>
+            </div>
+            <div class="form six" onmouseover="show5()" onmouseout="hide5()"></div>
+            <p>sat</p>
+          </div>
+          <div class="individual-tables">
+            <div class="each_day" id="sun">
+              <p class="per_day" id="sunday"></p>
+            </div>
+            <div class="form seven" onmouseover="show6()" onmouseout="hide6()"></div>
+            <p>sun</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="total">
+        <div class="left">
+          <p class="text">Total this month</p>
+          <p class="number">$478.33</p>
+        </div>
+        <div class="right">
+          <p class="number">+2.4%</p>
+          <p class="text">from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Josepablo Ellis</a>.
+  </div>
+
+  <script src="chart.js"></script>
+</body>
+</html>
